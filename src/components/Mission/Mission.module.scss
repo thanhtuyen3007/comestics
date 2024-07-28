@@ -1,0 +1,14 @@
+.wrapper {
+  position: relative;
+  min-height: 589px;
+  background: url(../assets/images/girl.png)  no-repeat center center;
+  background-size: contain;
+  .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Playfair Display", serif;
+    font-size: 6rem; 
+    text-transform: uppercase;
+  }
+}

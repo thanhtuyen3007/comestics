@@ -1,0 +1,24 @@
+.wrapper {
+  .logo {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .nav_list {
+    flex-grow: 0;
+    .nav_linkItem {
+      height: 100%;
+      font-size: 1.6rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      padding: 15px 10px;
+      &:hover {
+        font-weight: 600;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
