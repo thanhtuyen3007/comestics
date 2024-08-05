@@ -6,7 +6,7 @@ import images from "../assets";
 
 function Home() {
   return (
-    <section id="#home" className={clsx(styles.wrapper)}>
+    <section id="home" className={clsx(styles.wrapper)}>
       <Container fluid>
         <Row>
           <Col md={6} className={clsx(styles.home_text)}>
