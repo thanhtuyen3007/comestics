@@ -1,7 +1,8 @@
-import React from "react";
+import clsx from "clsx";
 import ProductItem from "./ProductItem";
 import images from "../../assets";
-import { title } from "process";
+import styles from "./ListProduct.module.scss";
+
 const productList = [
   { href: images.product1 },
   { href: images.product2 },
@@ -9,9 +10,9 @@ const productList = [
 ];
 function ListProduct() {
   return (
-    <section>
+    <section className={clsx(styles.wrapper)}>
       {productList.map((data, index) => (
-        <ProductItem key={index} href={data.href} />
+        <ProductItem  key={index} href={data.href} />
       ))}
     </section>
   );

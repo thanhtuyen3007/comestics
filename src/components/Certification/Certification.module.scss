@@ -1,0 +1,7 @@
+@use "src/sectionTitle";
+.title {
+  @include sectionTitle.center;
+}
+.content {
+  height: 60px;
+}

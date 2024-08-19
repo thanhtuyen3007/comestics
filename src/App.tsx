@@ -7,6 +7,8 @@ import Home from "./components/Home/Home";
 import Mission from "./components/Mission/Mission";
 import Gallery from "./components/Gallery/Gallery";
 import NewProduct from "./components/NewProduct/NewProduct";
+import Certification from "./components/Certification/Certification";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Mission/>
         <Gallery/>
         <NewProduct/>
+        <Certification/>
+        <Contact/>
       </main>
       <Footer />
     </div>

@@ -1,0 +1,25 @@
+.wrapper {
+}
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.text {
+    color: #8b8a8a;
+  font-size: 1.8rem;
+  line-height: 2;
+}
+.link{
+    display: block;
+    color: #333;
+    font-size: 1.8rem;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    .icon{
+        padding-right: 5px;
+    }
+}
