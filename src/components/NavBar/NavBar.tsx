@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import clsx from "clsx";
 import { Container, Navbar, Nav } from "react-bootstrap";
 
@@ -11,16 +11,15 @@ const NavListItem = [
   { href: "#gallery", name: "gallery" },
   { href: "#contact", name: "contact" },
 ];
-
-function NavBar() {
+function NavBar(): ReactElement {
   return (
     <Navbar
       expand="lg"
-      className={clsx(styles.wrapper, "bg-white")}
+      className={clsx(styles.wrapper)}
       fixed="top"
     >
       <Container fluid>
-        <Navbar.Brand className={clsx(styles.logo, "me-0")} href="#home">
+        <Navbar.Brand className={clsx(styles.logo, "me-0")} href="#">
           comestic
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

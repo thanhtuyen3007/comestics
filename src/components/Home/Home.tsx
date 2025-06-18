@@ -1,10 +1,10 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import clsx from "clsx";
 import styles from "./Home.module.scss";
-import { Col, Container, Row, Image } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import images from "../assets";
 
-function Home() {
+function Home(): ReactElement {
   return (
     <section id="home" className={clsx(styles.wrapper)}>
       <Container fluid>
@@ -12,9 +12,11 @@ function Home() {
           <Col md={6} className={clsx(styles.home_text)}>
             <h1>new arrivals</h1>
             <p>
-              Le Lorem Ipsum est simplement du faux texte employé dans la
-              composition et la mise en page avant impression.
+              Freshly formulated. Mindfully made. Discover our latest skincare
+              essentials — clean ingredients, radiant results, and a ritual your
+              skin will love.
             </p>
+            <span className={clsx(styles.home_text_span)}><a href="#gallery">Available now. Explore the full collection.</a></span>
           </Col>
           <Col md={6}>
             <img

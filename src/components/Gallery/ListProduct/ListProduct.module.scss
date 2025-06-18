@@ -1,9 +1,8 @@
-.wrapper {
-  margin-bottom: 50px;
+.wrapper{
+  padding-bottom: 30px;
 }
-
 .proWrapper {
-  margin-bottom: 40px;
+  padding-top: 25px;
   .reverse {
     flex-direction: row-reverse;
   }
@@ -15,18 +14,16 @@
     margin-bottom: 20px;
     padding-bottom: 20px;
     .proDesc_title {
-      font-size: 2.3rem;
+      font-size: 2.6rem;
       color: #424242;
       font-weight: 600;
       line-height: 2;
     }
     .proDesc_link {
-      position: absolute;
-      bottom: 0;
       font-size: 1.6rem;
-      color: #333;
-      letter-spacing: 0.05em;
-      border-bottom: 1px solid #333;
+      color: var(--color-cta);
+      font-weight: 600;
+      text-decoration: underline;
       &:hover {
         transform: scale(1.02);
       }

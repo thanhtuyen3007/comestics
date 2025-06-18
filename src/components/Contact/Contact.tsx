@@ -1,12 +1,12 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import clsx from "clsx";
 import styles from "./Contact.module.scss";
 import { Container, Row, Col, Image, Form, Button } from "react-bootstrap";
 import images from "../assets";
 
-function Contact() {
+function Contact(): ReactElement {
   return (
-    <section>
+    <section id="contact" className={clsx(styles.contact, "py-5")}>
       <Container fluid>
         <h1 className={clsx(styles.title)}>contact</h1>
         <Row>
@@ -33,9 +33,9 @@ function Contact() {
                 <Form.Label className="fs-5">Message</Form.Label>
                 <Form.Control size="lg" as="textarea" rows={5} />
               </Form.Group>
-              <Button variant="dark" type="submit" size="lg">
-                Send
-              </Button>
+              <button className={clsx(styles.btn)}  type="submit" >
+                Send Message
+              </button>
             </Form>
           </Col>
           <Col md={4} className="d-none d-md-block">

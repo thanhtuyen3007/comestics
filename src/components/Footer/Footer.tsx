@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import clsx from "clsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,37 +9,38 @@ import {
 import { Container, Row, Col } from "react-bootstrap";
 import styles from "./Footer.module.scss";
 
-function Footer() {
+function Footer(): ReactElement {
   return (
-    <section className={clsx(styles.wrapper)}>
-      <Container fluid>
+    <footer className={clsx(styles.wrapper)}>
+      <Container>
         <Row>
-          <h1 className={clsx(styles.logo)}>comestic</h1>
-          <Col className={clsx(styles.text)} md={6}>
-            <p>
-              Le Lorem Ipsum est simplement du faux texte employé dans la
-              composition et la mise en page avant impression.
-            </p>
-            <p>
-              Le Lorem Ipsum est simplement du faux texte employé dans la
-              composition et la mise en page avant impression.
+          <Col md={6}>
+            <h2 className={clsx(styles.logo)}>COSMETIC</h2>
+            <p className={styles.description}>
+              We are dedicated to crafting clean, plant-based skincare using the
+              finest ingredients. Experience radiant skin with our cruelty-free,
+              eco-conscious products.
             </p>
           </Col>
-          <Col md={6}>
-            <a className={clsx(styles.link)} href="#">
-              <FontAwesomeIcon className={clsx(styles.icon)} icon={faEnvelope} /> cosmectic@gmail.com
-            </a>
-            <a className={clsx(styles.link)} href="#">
-              <FontAwesomeIcon className={clsx(styles.icon)} icon={faPhone} /> 0123456789
-            </a>
-            <a className={clsx(styles.link)} href="#">
-              <FontAwesomeIcon className={clsx(styles.icon)} icon={faLocationDot} /> Le Lorem Ipsum est
-            </a>
-
+          <Col md={6} className={clsx(styles.contact)}>
+            <ul className={styles.contactList}>
+              <li>
+                <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
+                contact@cosmeticbeauty.com
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faPhone} className={styles.icon} />
+                +84 123 456 789
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faLocationDot} className={styles.icon} />
+                123 Skincare Street, District 1, HCMC
+              </li>
+            </ul>
           </Col>
         </Row>
       </Container>
-    </section>
+    </footer>
   );
 }
 

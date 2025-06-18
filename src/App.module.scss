@@ -1,7 +1,26 @@
 @import "normalize.css";
 @import "~bootstrap/scss/bootstrap";
-@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Nanum+Gothic:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+ :root {
+  --color-primary: #F2A29E;       /* Peach Bloom */
+  --color-accent: #d9bba5;        /* Mocha Beige */
+  --color-cta: #D9825B;           /* Terracotta */
+  --color-bg-main: #FFF9F6;       /* Almond Milk */
+  --color-bg-alt: #FAF2EC;        /* Nhẹ hơn để chia section */
+  --color-text-main: #3f1c16;     /* Deep Cocoa */
+  --color-text-muted: #8B6F66;    /* Muted Brown */
+  --color-white: #FFFFFF;
+  --color-error: #F5B5A5;
+
+  --color-bg-white: #FFFFFF;      /* Pure White */
+  --color-bg-light: #F8F4F0;      /* Light Beige */
+  --color-border: #E0D3C7;        /* Soft Border */
+  --color-shadow: rgba(0, 0, 0, 0.1); /* Light Shadow */
+  --color-success: #4caf50;       /* Soft Green for success messages */
+  --color-warning: #FFCC80;       /* Soft Yellow for warnings */
+}
 
 * {
   margin: 0;
@@ -12,9 +31,10 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Mulish", sans-serif;
   font-style: normal;
   font-weight: 400;
+  
 }
 a {
   text-decoration: none;

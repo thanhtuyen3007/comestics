@@ -1,14 +1,43 @@
 .wrapper {
-  position: relative;
-  min-height: 589px;
-  background: url(../assets/images/girl.png)  no-repeat center center;
-  background-size: contain;
-  .content {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-family: "Playfair Display", serif;
-    font-size: 6rem; 
-    text-transform: uppercase;
-  }
+  background-color: var(--color-bg-light);
+  color: var(--color-text-muted);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.image {
+  border-radius: 20px;
+  padding: 10px;
+}
+.title {
+  font-size: 3rem; /* 24px */
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.subtext {
+  font-size: 1.6rem; /* 16px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+
+  margin-bottom: 32px;
+}
+.description {
+  font-size: 1.6rem; /* 16px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+
+  margin-bottom: 32px;
+}
+.signature {
+  font-size: 1.6rem; /* 16px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+
+  margin-bottom: 32px;
 }
