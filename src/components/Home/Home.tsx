@@ -18,7 +18,7 @@ function Home(): ReactElement {
             </p>
             <span className={clsx(styles.home_text_span)}><a href="#gallery">Available now. Explore the full collection.</a></span>
           </Col>
-          <Col md={6}>
+          <Col  md={6}>
             <img
               src={images.banner}
               className={clsx(styles.home_img)}
