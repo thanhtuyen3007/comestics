@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import { useRef } from "react";
 import ProductItem from "./ProductItem";
 import images from "../../assets";
 import styles from "./ListProduct.module.scss";

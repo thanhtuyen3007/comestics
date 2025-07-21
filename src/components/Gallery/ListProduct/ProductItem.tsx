@@ -24,9 +24,9 @@ function ProductItem({ data, index }: ProductItemProps): ReactElement {
           <Col md={6} className={clsx(styles.proDesc)}>
             <h3 className={clsx(styles.proDesc_title)}>{data.title}</h3>
             <p className={clsx(styles.proDesc_text)}>{data.description}</p>
-            <a href="#" className={clsx(styles.proDesc_link)}>
+            <button type="button" className={clsx(styles.proDesc_link)}>
               <span>Shop now</span>
-            </a>
+            </button>
           </Col>
           <Col md={6}>
             <Image

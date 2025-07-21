@@ -1,7 +1,7 @@
-import React, { ReactElement } from "react";
+import  { ReactElement } from "react";
 import clsx from "clsx";
 import styles from "./Contact.module.scss";
-import { Container, Row, Col, Image, Form, Button } from "react-bootstrap";
+import { Container, Row, Col, Image, Form } from "react-bootstrap";
 import images from "../assets";
 
 function Contact(): ReactElement {
@@ -41,7 +41,7 @@ function Contact(): ReactElement {
           <Col md={4} className="d-none d-md-block">
             <Image
               src={images.contact}
-              alt="contactus"
+              alt="contact us"
               style={{ width: "100%" }}
             />
           </Col>

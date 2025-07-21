@@ -24,6 +24,9 @@
       color: var(--color-cta);
       font-weight: 600;
       text-decoration: underline;
+      border: none;
+      background: none;
+      cursor: pointer;
       &:hover {
         transform: scale(1.02);
       }
